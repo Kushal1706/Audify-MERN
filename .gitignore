@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+Frontend/Audify/node_modules/
+server/node_modules/
+
+# Environment variables — NEVER commit these
+.env
+Frontend/Audify/.env
+server/.env
+
+# Build output
+dist/
+Frontend/Audify/dist/
+
+# Editor
+.vscode/
+.DS_Store
