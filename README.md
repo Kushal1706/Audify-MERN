@@ -2,7 +2,7 @@
 
 A modern, full-stack audiobook streaming application built with the MERN stack (MongoDB, Express.js, React, Node.js). Audify allows users to discover, upload, and listen to audiobooks with AI-powered summaries and personalized recommendations.
 
-**Live Demo:** [https://audify-mern.vercel.app](https://audify-mern.vercel.app)
+**Live Demo:** [https://audify-mern.vercel.app](https://audify-app.vercel.app/login)
 
 ---
 
@@ -322,22 +322,8 @@ This project is open source and available under the ISC License.
 
 For support, questions, or feedback:
 - GitHub Issues: [Create an issue](https://github.com/Kushal1706/Audify-MERN/issues)
-- Email: [Connect via GitHub Profile](https://github.com/Kushal1706)
-
----
-
-## 📈 Future Enhancements
-
-- [ ] Playlist creation and management
-- [ ] Social features (follow users, share playlists)
-- [ ] Advanced recommendation algorithm
-- [ ] Offline listening capability
-- [ ] Multi-language support
-- [ ] Dark/Light mode toggle
-- [ ] User ratings and reviews
-- [ ] Audiobook series support
-- [ ] Analytics dashboard for creators
-- [ ] Integration with popular payment gateways
+- contact: [Connect via GitHub Profile](https://github.com/Kushal1706)
+- email: [Kushal](kushal17062004@gmail.com)
 
 ---
 
