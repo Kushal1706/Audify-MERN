@@ -13,12 +13,27 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
-    origin:["http://localhost:5173",
-        "https://audify-mern-ec5ss1pzx-kushal-ss-projects.vercel.app",
-    ],
-    methods:["GET", "POST", "PUT", "DELETE"],
+    origin: function(origin, callback) {
+      const allowedOrigins = [
+        "http://localhost:5173",
+      ];
+      
+      // Allow all Vercel preview deployments
+      if (!origin || 
+          allowedOrigins.includes(origin) || 
+          origin.endsWith(".vercel.app")) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
-}));
+    credentials: true,
+  }));
+  
+  // Handle preflight requests explicitly
+  app.options("*", cors());
 
 app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ limit: "50mb", extended: true }));
