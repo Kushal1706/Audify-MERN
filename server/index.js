@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 5000;
 
 app.use(cors({
     origin:["http://localhost:5173",
-        "https://audify-app.vercel.app",
+        "https://audify-mern-ec5ss1pzx-kushal-ss-projects.vercel.app",
     ],
     methods:["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
