@@ -33,7 +33,7 @@ app.use("/api/books",bookRoutes);
 app.use("/api/upload", uploadRoutes);
 app.use("/api/ai", aiRoutes);
 
-app.get("/api/test", (req,res) => {
+app.get("/api", (req,res) => {
     res.json({
         success: true,
         message: "Audify server is running!"
